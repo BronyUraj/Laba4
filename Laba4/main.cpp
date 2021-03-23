@@ -5,8 +5,15 @@
 using namespace std;
 
 int main() {
-	Complex arg = Complex(1.2, PI / 3);
+	setlocale(LC_ALL, "Russian");
+	double argRe;
+	double argIm;
+	cout << "Введите модуль комплексного числа: ";
+	cin >> argRe;
+	cout << "Введите аргумент комплексного числа: ";
+	cin >> argIm;
+	Complex arg = Complex(argRe, argIm);
 	Complex result = y(arg);
-	cout << result.Re() << " + (" << result.Im() << ")i" << endl;
+	cout << "y(z) = " << result.Re() << " + (" << result.Im() << ")i" << endl;
 	return 0;
 }
