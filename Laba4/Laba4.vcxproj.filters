@@ -18,12 +18,18 @@
     <ClInclude Include="Complex.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="UsersDefined.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Complex.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="UsersDefined.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
