@@ -39,13 +39,13 @@ Complex::Complex(double r, double phi) {
 	Complex Complex::operator+(const Complex& rhs) {
 		Complex result;
 		result.r = sqrt(pow((this->Re() + rhs.Re()), 2) + pow((this->Im() + rhs.Im()), 2));
-		result.phi = atan((this->Im() + rhs.Im()) / (this->Re() + rhs.Re()));
+		result.phi = atan2(this->Im() + rhs.Im(), this->Re() + rhs.Re());
 		return result;
 	}
 	Complex Complex::operator-(const Complex& rhs) {
 		Complex result;
 		result.r = sqrt(pow((this->Re() - rhs.Re()), 2) + pow((this->Im() - rhs.Im()), 2));
-		result.phi = atan((this->Im() - rhs.Im()) / (this->Re() - rhs.Re()));
+		result.phi = atan2(this->Im() - rhs.Im(), this->Re() - rhs.Re());
 		return result;
 	}
 	Complex Complex::operator*(const Complex& rhs) {
